@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-*0=)yi2h@p69ucy_nh*+m&ad$bbhh^ar$uzf7gy1k+hig!gp9t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -129,3 +129,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 GEMINI_API_KEY = "AIzaSyBdZj6GXgL3jEsb10vlFL-pgmup-6nl4l0"
+
+ALLOWED_HOSTS = ['*']
+import os
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
